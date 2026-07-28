@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+
+    <div class="logo">
+        <div class="logo-circle">N</div>
+        <span>Nova AI</span>
+    </div>
+
+    <div class="menu">
+        <button id="new-chat">+ New Chat</button>
+    </div>
+
+</nav>
+
+    <div class="container">
+
+        <h1>Nova AI</h1>
+
+        <p class="subtitle">
+            Your Intelligent AI Assistant
+        </p>
+
+        <div class="welcome-box">
+            <h3>👋 Welcome to Nova AI</h3>
+            <p>
+                I'm here to help with coding, writing, studies, travel,
+                careers, ideas, and much more.
+            </p>
+        </div>
+
+        <div class="chat-box">
+
+    <div class="ai-message">
+        👋 Hello! I'm <strong>Nova AI</strong>. How can I help you today?
+    </div>
+
+    <div class="user-message">
+        Hi Nova!
+    </div>
+
+</div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Ask Nova AI anything...">
+            <button id="send-btn">➜</button>
+        </div>
+
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <footer class="footer">
+    <p>© 2026 Nova AI</p>
+    <p>Designed &amp; Developed by <strong>Trapti</strong></p>
+</footer>
+
+</body>
+
+</html>
